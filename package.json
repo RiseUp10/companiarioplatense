@@ -1,0 +1,12 @@
+{
+  "name": "prueba-sass",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch scss:css"
+  },
+  "keywords": [],
+  "author": "Martin Rey",
+  "license": "ISC",
+  "description": ""
+}
