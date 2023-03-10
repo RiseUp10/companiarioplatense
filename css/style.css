@@ -2,37 +2,51 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: 1px black;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   max-width: 100%;
 }
 
-.container {
+.contenedor {
   max-width: 80%;
   margin: 0 auto;
   /* max-width: 1320px aclarar una medida para evitar que ocupe el 80% cuando la pantalla sea grande, sino queda estirado*/
 }
 
-.row {
+.fila {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
+  margin: 3rem 0;
 }
 
-/*.main   {
-            margin: 15px 0;
-            }*/
-.h1 {
-  color: #F9AE00;
-  margin-bottom: 10px;
+.columna {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px 30px;
+  margin: 20px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-family: veselinaregular;
+  font-size: 3rem;
 }
 
 p {
   font-style: italic;
   font-size: 1rem;
   margin-bottom: 1rem;
+  text-align: justify;
 }
 
 .button {
@@ -49,6 +63,9 @@ p {
 				width: 20px;
 				height: 20px;
 }*/
+/*.navbar	{
+							opacity: .5;
+						}*/
 .nav {
   background-color: #F9AE00;
 }
@@ -65,7 +82,7 @@ p {
 }
 
 .nav__hamburger {
-  border: black solid 4px;
+  border: white solid 4px;
   font-size: 15px !important;
 }
 
@@ -77,10 +94,6 @@ p {
 					height: 200px;
 					margin: 0;
 				   }
-
-
-.img_home   {   max-width: 100%;
-			}
 
 .section_comofunciona   {
 					padding: 15px 0 15px 0;
@@ -101,7 +114,27 @@ p {
 .textoComoFunciona{     font-size: 1rem;
 					text-align: justify;
 		}*/
+.main__tarjeta {
+  color: white;
+  background-color: #0077bd;
+  border: 2px solid #0077bd;
+  border-radius: 10px;
+  box-shadow: 5px 5px 3px #F9AE00;
+  min-width: 150px;
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: veselinaregular;
+}
+
 @media only screen and (min-width: 600px) and (max-width: 976px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .fila {
+    flex-wrap: nowrap;
+  }
   .nav {
     background-color: #0077bd;
   }
@@ -115,8 +148,11 @@ p {
   }
 }
 @media only screen and (min-width: 976px) {
+  .fila {
+    flex-wrap: nowrap;
+  }
   .nav {
-    background-color: #F9AE00;
+    background-color: #70b62c;
   }
   .nav__anc {
     margin-right: 5px;
@@ -128,11 +164,10 @@ p {
     background-color: #0077bd;
     color: white;
   }
+  .carousel__main {
+    height: 100vh;
+  }
 }
-.main__carousel {
-  height: 100vh;
-}
-
 footer {
   background-color: #D6C77C;
   border-top: outset 5px #519190;
@@ -167,6 +202,13 @@ footer {
   display: inline-block;
   text-align: center;
   margin-bottom: 2rem;
+}
+
+@font-face {
+  font-family: "veselinaregular";
+  src: css/fonts("veselina-webfont.woff2") format("woff2"), css/fonts("veselina-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /*# sourceMappingURL=style.css.map */

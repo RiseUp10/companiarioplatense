@@ -4,3 +4,10 @@
 @import "home";
 @import "footer";
 @import "pages";
+@font-face   {
+   font-family: 'veselinaregular';
+   src:  css/fonts('veselina-webfont.woff2') format('woff2'),
+         css/fonts('veselina-webfont.woff') format('woff');
+         font-weight: normal;
+         font-style: normal;
+}

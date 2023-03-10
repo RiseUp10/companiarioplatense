@@ -3,10 +3,6 @@
 					margin: 0;
 				   }
 
-
-.img_home   {   max-width: 100%;
-			}
-
 .section_comofunciona   {
 					padding: 15px 0 15px 0;
 																}
@@ -28,7 +24,30 @@
 		}*/
 
 
+					
+.main__tarjeta	{
+						color: white;	
+						background-color: $color-secundario;
+						border: 2px solid $color-secundario;
+						border-radius: 10px;
+						box-shadow: 5px 5px 3px $color-principal;
+						min-width: 150px;
+					}
+
+h2	{
+		font-size: 3rem;
+		font-family: veselinaregular;
+	}
+
 @media only screen and (min-width: 600px) and (max-width: 976px)	{
+
+	h1	{
+			font-size: 3rem;
+	}
+	
+	.fila    {   
+					flex-wrap: nowrap;
+	}
 
 	.nav	{
 				background-color: $color-secundario;
@@ -43,12 +62,17 @@
 								border: white solid 6px;
 								font-size: 25px !important;
 							}
+
+							
 }
 
 @media only screen and (min-width: 976px)	{			
 			
+	.fila    {   
+					flex-wrap: nowrap;
+	}
 	.nav	{
-				background-color: $color-principal;
+				background-color: $color-terciario;
 	
 		&__anc	{
 						margin-right: 5px;
@@ -63,8 +87,9 @@
 						}
 					}
 			}
-}
+	
+	.carousel__main	{
+								height: 100vh;
+							}
 
-.main__carousel	{
-							height: 100vh;
-						}
+}

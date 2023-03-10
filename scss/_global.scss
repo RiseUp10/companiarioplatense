@@ -1,39 +1,53 @@
-*   {   
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        }
+*  {   
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      outline: 1px black;
+   }
 
 body    {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Poppins', sans-serif;
             max-width: 100%;
         }
 
-.container  {   
+.contenedor  {   
                 max-width: 80%;
                 margin: 0 auto;
                 /* max-width: 1320px aclarar una medida para evitar que ocupe el 80% cuando la pantalla sea grande, sino queda estirado*/
                 }
 
-.row    {   
+.fila    {   
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
+            flex-wrap: wrap;
             align-items: center;
-            }
+            margin: 3rem 0;
+         }
 
-/*.main   {
-            margin: 15px 0;
-            }*/
+.columna	{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 20px 30px;
+            margin: 20px;
+			}	
 
-.h1     {   
-            color: $color-principal;
-            margin-bottom: 10px;
-            }
-        
+img   {
+         width: 100%;
+         height: auto;
+      }
+
+
+h1 {  
+      font-family: $font-main;
+      font-size: 3rem;
+}
+
         
 p   {   font-style: italic;
         font-size: 1rem;
         margin-bottom: 1rem;
+        text-align: justify;
         }
 
 .button  {      
