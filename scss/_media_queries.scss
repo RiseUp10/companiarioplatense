@@ -1,0 +1,66 @@
+@media only screen and (min-width: 600px) and (max-width: 976px)	{
+
+	h1	{
+			font-size: 3rem;
+	}
+	
+
+    
+    .fila    {   
+					flex-wrap: nowrap;
+	}
+
+	.nav	{
+				background-color: $color-secundario;
+							
+		&__anc   {  
+						color:white;
+						font-size: 1.2rem;
+					}
+			}
+	
+	.nav__hamburger	{
+								border: white solid 6px;
+								font-size: 25px !important;
+							}
+
+							
+}
+
+@media only screen and (min-width: 976px)	{			
+			
+	.nav__logo  {
+                    max-width: 280px;
+                }
+    
+    .footer__base--text {
+                            font-size: 2rem;
+                            color: black;
+                        }
+
+    .footer__secciones--a   {
+                            font-size: .85rem;
+                        }
+    
+    .nav	{
+				background-color: $color-terciario;
+	
+		&__anc	{
+						margin-right: 5px;
+						font-size: 1.5rem !important;
+						-webkit-text-stroke-color: white;
+						-webkit-text-stroke-width: 1px;
+		
+			&:hover	{
+							background-color: $color-secundario;
+							color: white;
+				
+						}
+					}
+			}
+	
+	.carousel__main	{
+								height: 90vh;
+							}
+
+}

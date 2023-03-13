@@ -18,6 +18,7 @@ body    {
 
 .fila    {   
             display: flex;
+            flex-direction: row;
             justify-content: space-between;
             flex-wrap: wrap;
             align-items: center;
@@ -25,37 +26,54 @@ body    {
          }
 
 .columna	{
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            padding: 20px 30px;
-            margin: 20px;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding: 20px 30px;
+                margin: 20px;
 			}	
 
-img   {
-         width: 100%;
-         height: auto;
-      }
+img {
+        width: 100%;
+        border-radius: 10px;
+    }
 
 
 h1 {  
       font-family: $font-main;
+      text-align: center;
       font-size: 3rem;
 }
 
-        
+h2  {
+        @extend h1;
+        font-size: 2.5rem;
+        color: black;
+        margin: 2rem 0;
+}
+
+h3  {
+        @extend h1;
+        font-size: 2rem;
+}
+
+h5  {
+        @extend h1;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+}
+
 p   {   font-style: italic;
         font-size: 1rem;
         margin-bottom: 1rem;
         text-align: justify;
         }
 
-.button  {      
+.boton  {      
             font-weight: 500;
             font-size: 1.5rem;
             padding: 5px 15px;
-            background-color: #D6C77C;
-            color: black;
             text-decoration: none;
-            border-radius: 15px;
-            }
+            border-radius: 10px;
+        }
