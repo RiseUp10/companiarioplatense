@@ -3,26 +3,6 @@ footer {    background-color: $color-terciario;
 			min-height: auto; 
 	}
 
-/*Iconos Footer*/
-.bi {
-                    text-decoration: none;
-                    color: black;
-                    font-size: 5rem !important;
-
-    &:hover {
-                color:white;
-            }
-}
-
-.fa-brands  {
-                text-decoration: none;
-                color: black;
-                font-size: 2.5rem;
-
-    &:hover {
-                font-size: 3rem;
-            }
-}
 
 .footer__base   {
                     background-color: $color-secundario;
