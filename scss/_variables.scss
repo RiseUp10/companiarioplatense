@@ -1,6 +1,6 @@
 $color-principal: #F9AE00;
 $color-secundario: #0077bd;
 $color-terciario: #70b62c;
-$box-shadow: 0 4px 2px 0 $color-principal;
-$title-font: 2rem bold;
+$shadow: 5px 5px 10px 0 $color-principal;
 $font-main: veselinaregular;
+$gradiante: linear-gradient($color-principal,$color-terciario)

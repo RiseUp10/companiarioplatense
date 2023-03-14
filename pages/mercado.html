@@ -27,11 +27,11 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nav__a nav__anc" href="../pages/blog.html">Portal de noticias</a>
-                        </li><li class="nav-item">
-                            <a class="nav-link nav__a nav__anc" href="../pages/mercado.html">Mercado</a>
+                        </li><li class="nav-item nav__item--active">
+                            <a class="nav-link nav__a nav__anc" href="#">Mercado</a>
                         </li>
-                            <li class="nav-item nav__item--active">
-                            <a class="nav-link nav__a nav__anc" href="#">Nosotros</a>
+                            <li class="nav-item">
+                            <a class="nav-link nav__a nav__anc" href="../pages/nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nav__a nav__anc" href="../pages/contacto.html">Contacto</a>
@@ -42,91 +42,40 @@
             </nav>
         </header>
         <main>
-            <div class="contenedor--60">
-                <h3 class="mt-4">Un poco de historia.</h3>
-                <p style="line-height: 2rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis magni laborum veritatis consectetur sapiente! Ducimus unde tenetur repellendus error expedita molestiae et ratione dolore commodi quia tempore, deleniti perferendis in odit harum consequatur nostrum nemo atque vel voluptates quos a sequi id? Provident, odio veniam nostrum assumenda id quae? Iure expedita neque quas placeat praesentium, veniam dolore sit hic exercitationem veritatis recusandae laborum eum commodi at ipsum repudiandae voluptate alias.</p>
+            <h2 class="mt-4">Mercado de Valores</h2>
+                <table class="table table-dark table-hover text-center container table-striped mb-3">
+                    <thead>
+                        <tr class="table-success">
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-hover">
+                        <tr class="table-warning">
+                            <th scope="row">1</th>
+                            <td>Supervielle</td>
+                            <td>20%</td>
+                        </tr>
+                        <tr class="table-warning">
+                            <th scope="row">2</th>
+                            <td>BBVA</td>
+                            <td>15%</td>
+                        </tr>
+                        <tr class="table-warning">
+                            <th scope="row">3</th>
+                            <td>Nación</td>
+                            <td>25%</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <hr>
-            <div class="contenedor">
-                <div class="fila">
-                    <div class="columna main__tarjeta">
-                        <h3>Misión</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae expedita voluptas voluptatem nisi et deleniti rerum velit, enim quo dolor.</p>
-                    </div>
-                    <div class="columna main__tarjeta">
-                        <h3>Visión</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae expedita voluptas voluptatem nisi et deleniti rerum velit, enim quo dolor.</p>
-                    </div>
-                    <div class="columna main__tarjeta">
-                        <h3>Valores</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae expedita voluptas voluptatem nisi et deleniti rerum velit, enim quo dolor.</p>
-                    </div>
-                </div>
+            
+            <div class="container text-center mb-3">
+                <h3 class="mt-5">Valores de pizarra</h3>
+                <img class="mercado__pizarra" src="../imgs/grafico_de_barra.webp" alt="">
             </div>
-            <div class="container">
-                <h3>Nuestros fundadores</h3>
-                <div class="row">
-                    <div class="col-md-6 text-center">
-                        <img class="nosotros__img" src="../imgs/bill_gates.jpg" alt="">
-                        <div>
-                            <h5>Guillermito Puertas</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum adipisci voluptatem, quae voluptatibus incidunt perferendis! Ullam fugiat rerum quia dicta?</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <img class="nosotros__img" src="../imgs/mickey_mouse.webp" alt="">
-                        <div>
-                            <h5>Ratón Miguelito</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum adipisci voluptatem, quae voluptatibus incidunt perferendis! Ullam fugiat rerum quia dicta?</p>
-                        </div>
-                    </div>
-                </div>    
-                
-
-            </div>
-			<!--div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 m-3">
-				<div class="col">
-                    <div class="card h-100">
-                        <img src="../imgs/promo_coto.jpg" class="card-img-top" alt="Promocion de Coto">
-                        <div class="card-body bg-success text-light rounded-bottom-2">
-                            <h5 class="card-title fw-bold">Promo Coto</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis quaerat autem quas incidunt dolorum iusto vel. Doloremque laudantium impedit tempora.</p>
-                            <a href="#" class="btn btn-warning fw-bold">Ver promo</a>
-                        </div>
-                    </div>
-				</div>
-				<div class="col">
-                    <div class="card h-100">
-                        <img src="../imgs/promo_fravega.png" class="card-img-top" alt="Promocion de Fravega">
-                        <div class="card-body bg-success text-light rounded-bottom-2">
-                            <h5 class="card-title fw-bold">Promo Fravega</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime voluptatem deserunt autem omnis a non!</p>
-                            <a href="#" class="btn btn-warning fw-bold">Ver promo</a>
-                        </div>
-                    </div>
-				</div>
-				<div class="col">
-                    <div class="card h-100">
-                        <img src="../imgs/promo_supervielle.jpg" class="card-img-top" alt="Promocion de Supervielle">
-                        <div class="card-body bg-success text-light rounded-bottom-2">
-                            <h5 class="card-title fw-bold">Promo Supervielle</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus consequatur suscipit quas.</p>
-                            <a href="#" class="btn btn-warning fw-bold">Ver promo</a>
-                        </div>
-                    </div>
-				</div>
-				<div class="col">
-                    <div class="card h-100">
-                        <img src="../imgs/promo_fravega2.jpg" class="card-img-top" alt="Segunda promocion de Fravega">
-                        <div class="card-body bg-success text-light rounded-bottom-2">
-                            <h5 class="card-title fw-bold">Promo Fravega 2</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit adipisci saepe nemo et dignissimos!</p>
-                            <a href="#" class="btn btn-warning fw-bold">Ver promo</a>
-                        </div>
-                    </div>
-				</div>
-			</div>
-        </main-->
+        </main>
         <!--FOOTER-->
         <footer>
             <div class="container-fluid">
@@ -137,8 +86,8 @@
                     <div class="col-sm-6 col-md-5 text-light order-md-1">
                         <h5 class="text-center">Páginas</h5>
                         <ul class="footer__secciones">
-                            <li><a class="footer__secciones--a" href="../pages/mercado.html">Mercado</a></li>
-                            <li><a class="footer__secciones--a" href="#">Nosotros</a></li>
+                            <li><a class="footer__secciones--a" href="#">Mercado</a></li>
+                            <li><a class="footer__secciones--a" href="../pages/nosotros.html">Nosotros</a></li>
                             <li><a class="footer__secciones--a" href="../pages/blog.html">Portal de noticias</a></li>
                             <li><a class="footer__secciones--a" href="../pages/contacto.html">Contacto</a></li>
                         </ul>

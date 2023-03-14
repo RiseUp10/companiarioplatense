@@ -1,25 +1,46 @@
-footer {    background-color: #D6C77C;
-		border-top: outset 5px #519190; 
-			min-height: auto; 
-	}
-
-    .descarga   {   margin-top: 15px;
-        margin-bottom: 1rem;
-    }   
-
-.footer_1   {border-top: 2px double #519190;
-    font-size: 2rem;
-    color: black;
-    }
-
-.fa-brands      {text-decoration: none;
-        color: black;
-        font-size: 2rem;
+footer  {
+            background-color: $color-terciario;
+            border-top: double 5px $color-principal; 
+            min-height: auto;
+            padding-top: 0.5rem;
 }
 
-.footer_2   {
-    text-align: center;
-    font-size: 0.8rem;
-    color: white;
-    background-color: #519190;
+.footer__base   {
+                    background-color: $color-secundario;
+                    padding: .5rem;
+        
+    &--text {
+                font-size: .85rem;
+                color:white;
+                text-align: center;
+                line-height: 2rem;
+            }
+}
+
+.footer__logo   {
+                    max-width: 100px;
+        }
+
+.footer__secciones  {
+                        list-style-type: none;
+                        padding-left: 0px;
+                        line-height: 1.8rem;
+                        font-size: .85rem;
+                        color: white;
+                        text-decoration: none;
+                    
+        &2  {
+                @extend .footer__secciones;
+                padding-left: 2px;
+            }
+
+        &--a    {
+                    @extend .footer__secciones;
+                    letter-spacing: 1.5px;
+                    padding-left: 90px;
+              }
+}
+
+.footer__contacto   {
+                        padding-left: 30px;
 }

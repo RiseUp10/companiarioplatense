@@ -1,0 +1,90 @@
+@media (min-width: 600px) and (max-width: 976px)	{
+
+    .nav__hamburger	{
+                        border: white solid 6px;
+                        font-size: 25px;
+                    }
+
+    .container__iframe  {
+                            display: block;
+                        }
+    
+    .main__tarjeta	{
+                        max-width: 450px;
+                     }
+
+    .footer__contacto   {
+                            padding-left: 30px;
+                        }
+
+    .footer__secciones--a   {
+                                font-size: 1rem;
+                                padding-left: 120px;
+                            }
+}
+
+
+
+@media only screen and (min-width: 977px)	{			
+
+    .contenedor--60 {
+                        max-width: 60%;
+                        margin: 0 auto;
+                    }
+    
+    .nav__logo  {
+                    max-width: 280px;
+                }
+    
+    .container__iframe  {
+                            display: block;
+                        }
+
+    .main__tarjeta	{
+                        max-width: 350px;
+                        
+                    }
+    
+    .footer__base--text {
+                            font-size: 1rem;
+                            color: white;
+                        }
+
+    .footer__secciones--a   {
+                                font-size: 1.2rem;
+                                padding-left: 150px;
+                            }
+    
+    .footer__contacto   {   
+                            padding-left: 70px;
+                        }
+    
+
+        .footer__secciones2 {
+                              font-size: 1rem;
+                            }
+    .nav	{
+				background-color: $color-terciario;
+	
+		&__anc	{
+						margin-right: 5px;
+						font-size: 1.5rem !important;
+                        color: $color-terciario;
+						-webkit-text-stroke-color: white;
+						-webkit-text-stroke-width: 1px;
+		
+			&:hover	{
+                        background-color: $color-secundario;
+                        color: white;
+                        transform: scale(1,1);
+                        border-radius: 10px;
+            
+                    }
+				}
+			}
+	
+	.carousel__main	{
+								height: 100vh;
+							}
+
+}
