@@ -37,9 +37,16 @@
 	&--boton	{
 					@extend .boton;
 					background-color: black;
-					color: $color-principal	;
-			}
-		}
+					color: $color-principal;
+					margin-top: 10px;
+		
+		&:hover	{
+					background-color: $color-principal;
+					border: 2px black solid;
+					color: black;
+				}
+				}
+}
 
 .main__acordeon	{
 					color:white;

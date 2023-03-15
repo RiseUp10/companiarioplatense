@@ -33,7 +33,7 @@
                     }
     
     .nav__logo  {
-                    max-width: 280px;
+                    max-width: 350px;
                 }
     
     .container__iframe  {
@@ -41,7 +41,7 @@
                         }
 
     .main__tarjeta	{
-                        max-width: 350px;
+                        max-width: 320px;
                         
                     }
     
@@ -59,15 +59,15 @@
                             padding-left: 70px;
                         }
     
-
-        .footer__secciones2 {
+    .footer__secciones2 {
                               font-size: 1rem;
                             }
+    
     .nav	{
 				background-color: $color-terciario;
 	
 		&__anc	{
-						margin-right: 5px;
+						margin-right: px;
 						font-size: 1.5rem !important;
                         color: $color-terciario;
 						-webkit-text-stroke-color: white;
@@ -76,6 +76,7 @@
 			&:hover	{
                         background-color: $color-secundario;
                         color: white;
+                        font-weight: 600;
                         transform: scale(1,1);
                         border-radius: 10px;
             
@@ -84,7 +85,20 @@
 			}
 	
 	.carousel__main	{
-								height: 100vh;
+								height: 90vh;
 							}
+}
 
+@media only screen and (min-width: 1250px)	{
+    .carousel__main	{
+                        height: 120vh;
+                    }
+    
+    .footer__contacto   {
+                            padding-left: 90px;
+                        }
+
+    .footer__secciones--a   {
+                                padding-left: 130px;
+    }
 }
