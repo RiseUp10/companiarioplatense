@@ -1,81 +1,105 @@
 /*Blog*/
-.blog__card	{
-				background-color: $color-secundario;
-				color: white;
-				box-shadow: $shadow;
-				overflow: hidden;
-	
-	&:hover	{
-				transition: transform 500ms ease;
-				transform: scale(1.05);
-	}
-			}
+.blog__card {
+  background-image: $gradiante;
+  color: white;
+  box-shadow: $shadow;
+  overflow: hidden;
 
-.blog__boton	{
-					@extend .boton;
-					background-color: $color-principal;
-					color: white;
+  &:hover {
+    transition: transform 500ms ease;
+    transform: scale(1.05);
+  }
+}
 
-	&:hover	{
-				background-color: $color-terciario;
-				transition: transform 500ms ease;
-				transform: translate(0,10px) scale(1.2,1.2);
-			}
+.blog__boton {
+  @extend .boton;
+  background-color: $color-secundario;
+  color: white;
+	border: $color-principal 3px solid;
+	transition: transform 500ms ease;
+
+  &:hover {
+    background-color: $color-principal;
+    color: $color-secundario;
+    transform: translate(0, 10px) scale(1.2, 1.2);
+  }
 }
 
 /*Nosotros*/
-.nosotros__img	{
-					max-width: 300px;
-					border-radius: 50%;
-					max-height: 150px;
-					transition: 500ms ease;
+.nosotros__img {
+  max-width: 300px;
+  border-radius: 50%;
+  max-height: 150px;
+  transition: 500ms ease;
 
-	&:hover		{
-					transform:translate(0,-20px);
-					opacity: .7;
-				}				
+  &:hover {
+    transform: translate(0, -20px);
+    opacity: 0.7;
+  }
 }
 
 /*Contacto*/
-.contacto	{
-				border: 2px $color-secundario solid;
-				border-radius: 10px;
-	
-	&__input	{
-					background-image: $gradiante;
-					color: white;
-				}
+.contacto {
+  border: 2px $color-secundario solid;
+  border-radius: 10px;
+	background-image: url(../imgs/rp_color_blanco_vertical.png);
+	background-blend-mode: opacity(0.2);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
 
-	&__boton	{
-					@extend .boton;
-					background-color: $color-secundario;
-					color:white;
-				
+  /*&--layer	{
+		background-color: $color-principal;
+		opacity: 0.2;
+	}*/
+	
+	&__input {
+    border: 2px $color-secundario solid;
+    color: $color-secundario;
+		box-shadow: $shadow;
+  
 		&:hover	{
-					border: 2px $color-secundario solid;
-					color: $color-secundario;
-		}		
-				}
+			background-color: $color-secundario;
+			color: white;
+		}
+	}
+	
+  &__boton {
+    @extend .boton;
+    background-color: $color-secundario;
+    color: white;
+
+    &:hover {
+      border: 2px $color-secundario solid;
+      color: $color-secundario;
+    }
+  }
 }
 
 /*Mercado*/
-.mercado__pizarra	{
-						animation-name: prueba;
-						animation-duration: 5s;
-						animation-iteration-count: infinite;
+.mercado__pizarra {
+  animation-name: prueba;
+  animation-duration: 2s;
+  animation-iteration-count: inherit;
+
+  &:hover {
+    transition: all 1s ease;
+    transform: translateX(50px);
+  }
 }
 
-@keyframes	prueba	{
-			
-				0%		{	opacity: 0;
-							filter: blur(20px);
-						}
+@keyframes prueba {
+  0% {
+    opacity: 0;
+    filter: blur(20px);
+  }
 
-				50% 	{	opacity: .5;
-							/*filter: brightness(1),blur(20px);*/
-						}
+  50% {
+    opacity: 0.5;
+    /*filter: brightness(1),blur(20px);*/
+  }
 
-				100%	{	opacity: 1;
-				
-						}
+  100% {
+    opacity: 1;
+  }
 }

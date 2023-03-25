@@ -1,63 +1,78 @@
-.main__tarjeta	{
-					color: white;	
-					background-image: $gradiante;
-					border: 2px solid $color-secundario;
-					border-radius: 10px;
-					box-shadow: $shadow;
-					max-width: 450px;
-				}
-
-.container__iframe	{
-						position: relative;
-						overflow: hidden;
-						width: 100%;
-						padding-top: 56.25%;
-						margin-top: 2rem;
-						margin-bottom: 2rem;
-						max-width: 70%;
-						margin: 5rem auto;
-						display: none;
+.main__section1:before	{
+	transform: translateX(-30px);
+	transition: all 1s;
 }
 
-.main__iframe	{
-					position: absolute;
-					top: 0;
-					left: 0;
-					bottom: 0;
-					right: 0;
-					width: 100%;
-					height: 100%;
-					border: $color-secundario 5px solid;
-					border-radius: 10px;
+.main__tarjeta {
+  color: white;
+  background-image: $gradiante;
+  border: 2px solid $color-secundario;
+  border-radius: 10px;
+  box-shadow: $shadow;
+  max-width: 450px;
+	transition: all 500ms;
+
+	&:hover {
+    transform: translate(0, 10px) scale(1.2, 1.2);
+  }
 }
 
-.main__blog	{
-				background-color: $color-secundario;
-	
-	&--boton	{
-					@extend .boton;
-					background-color: black;
-					color: $color-principal;
-					margin-top: 10px;
-		
-		&:hover	{
-					background-color: $color-principal;
-					border: 2px black solid;
-					color: black;
-				}
-				}
+.container__iframe {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  max-width: 70%;
+  margin: 5rem auto;
+  display: none;
 }
 
-.main__acordeon	{
-					color:white;
-					font-family: 'poppins', sans-serif;
-							
-	&--closed	{
-					@extend .main__acordeon;
-					background-color: $color-secundario;
-				}						
+.main__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: $color-secundario 5px solid;
+  border-radius: 10px;
+}
 
-	&--open	{	
-				background-color: $color-principal;
-			}
+.main__blog {
+  background-color: $color-secundario;
+	background-image: url(../imgs/rp_color_negro_iso.png);
+	background-repeat: repeat-x;
+	background-position: center;
+	background-size:contain;
+
+
+  &--boton {
+    @extend .boton;
+    background-color: black;
+    color: $color-principal;
+    margin-top: 10px;
+
+    &:hover {
+      background-color: $color-principal;
+      border: 2px black solid;
+      color: black;
+    }
+  }
+}
+
+.main__acordeon {
+  color: white;
+  font-family: "poppins", sans-serif;
+
+  &--closed {
+    @extend .main__acordeon;
+    background-color: $color-secundario;
+  }
+
+  &--open {
+    background-color: $color-principal;
+  }
 }

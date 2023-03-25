@@ -1,46 +1,41 @@
-footer  {
-            background-color: $color-terciario;
-            border-top: double 5px $color-principal; 
-            min-height: auto;
-            padding-top: 0.5rem;
+footer {
+  background-color: $color-terciario;
+  border-top: double 5px $color-principal;
+  min-height: auto;
+  padding-top: 0.5rem;
 }
 
-.footer__base   {
-                    background-color: $color-secundario;
-                    padding: .5rem;
-        
-    &--text {
-                font-size: .85rem;
-                color:white;
-                text-align: center;
-                line-height: 2rem;
-            }
+.footer__base {
+  background-color: $color-secundario;
+  padding: 0.5rem;
+
+  &--text {
+    font-size: 0.75rem;
+    color: white;
+    text-align: center;
+    line-height: 2rem;
+  }
 }
 
-.footer__logo   {
-                    max-width: 100px;
-        }
-
-.footer__secciones  {
-                        list-style-type: none;
-                        padding-left: 0px;
-                        line-height: 1.8rem;
-                        font-size: .85rem;
-                        color: white;
-                        text-decoration: none;
-                    
-        &2  {
-                @extend .footer__secciones;
-                padding-left: 2px;
-            }
-
-        &--a    {
-                    @extend .footer__secciones;
-                    letter-spacing: 1.5px;
-                    padding-left: 90px;
-              }
+.footer__logo {
+  max-width: 100px;
 }
 
-.footer__contacto   {
-                        padding-left: 30px;
+.footer__secciones {
+  list-style-type: none;
+  line-height: 1.8rem;
+  font-size: 0.85rem;
+  color: white;
+  text-decoration: none;
+
+  &2 {
+    @extend .footer__secciones;
+    padding-left: 2px;
+  }
+
+  &--a {
+    @extend .footer__secciones;
+    letter-spacing: 1.5px;
+    margin-left: -20px;
+  }
 }

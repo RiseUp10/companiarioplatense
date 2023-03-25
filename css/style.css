@@ -71,11 +71,14 @@ p {
 }
 
 .boton, .contacto__boton, .blog__boton, .main__blog--boton {
+  font-family: veselinaregular;
   font-weight: 500;
   font-size: 1.2rem;
   padding: 5px 15px;
   text-decoration: none;
   border-radius: 10px;
+  transition: all 500ms;
+  overflow: hidden;
 }
 
 @keyframes titulos {
@@ -93,10 +96,11 @@ p {
   background-color: #F9AE00;
 }
 .nav__anc {
-  color: black;
+  color: white;
   font-size: 1rem;
   font-weight: 500;
   text-decoration: none;
+  border-radius: 10px;
 }
 .nav__anc:hover {
   transform: scale(1.5, 1.5);
@@ -105,7 +109,7 @@ p {
 }
 
 .nav__hamburger {
-  border: white solid 4px;
+  border: white solid 3px;
   font-size: 15px;
 }
 
@@ -114,21 +118,30 @@ p {
 }
 
 .nav__item--active {
-  border: white 2px solid;
-  border-radius: 5px;
+  border-radius: 10px;
+  background-color: #0077bd;
 }
 
 .nav__logo {
   max-width: 240px;
 }
 
+.main__section1:before {
+  transform: translateX(-30px);
+  transition: all 1s;
+}
+
 .main__tarjeta {
   color: white;
-  background-image: linear-gradient(#F9AE00, #70b62c);
+  background-image: linear-gradient(#F9AE00, #0077bd);
   border: 2px solid #0077bd;
   border-radius: 10px;
   box-shadow: 5px 5px 10px 0 #F9AE00;
   max-width: 450px;
+  transition: all 500ms;
+}
+.main__tarjeta:hover {
+  transform: translate(0, 10px) scale(1.2, 1.2);
 }
 
 .container__iframe {
@@ -157,6 +170,10 @@ p {
 
 .main__blog {
   background-color: #0077bd;
+  background-image: url(../imgs/rp_color_negro_iso.png);
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: contain;
 }
 .main__blog--boton {
   background-color: black;
@@ -192,7 +209,7 @@ footer {
   padding: 0.5rem;
 }
 .footer__base--text {
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   color: white;
   text-align: center;
   line-height: 2rem;
@@ -204,7 +221,6 @@ footer {
 
 .footer__secciones, .footer__secciones--a, .footer__secciones2 {
   list-style-type: none;
-  padding-left: 0px;
   line-height: 1.8rem;
   font-size: 0.85rem;
   color: white;
@@ -215,16 +231,12 @@ footer {
 }
 .footer__secciones--a {
   letter-spacing: 1.5px;
-  padding-left: 90px;
-}
-
-.footer__contacto {
-  padding-left: 30px;
+  margin-left: -20px;
 }
 
 /*Blog*/
 .blog__card {
-  background-color: #0077bd;
+  background-image: linear-gradient(#F9AE00, #0077bd);
   color: white;
   box-shadow: 5px 5px 10px 0 #F9AE00;
   overflow: hidden;
@@ -235,12 +247,14 @@ footer {
 }
 
 .blog__boton {
-  background-color: #F9AE00;
+  background-color: #0077bd;
   color: white;
+  border: #F9AE00 3px solid;
+  transition: transform 500ms ease;
 }
 .blog__boton:hover {
-  background-color: #70b62c;
-  transition: transform 500ms ease;
+  background-color: #F9AE00;
+  color: #0077bd;
   transform: translate(0, 10px) scale(1.2, 1.2);
 }
 
@@ -260,9 +274,23 @@ footer {
 .contacto {
   border: 2px #0077bd solid;
   border-radius: 10px;
+  background-image: url(../imgs/rp_color_blanco_vertical.png);
+  background-blend-mode: opacity(0.2);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  /*&--layer	{
+  	background-color: $color-principal;
+  	opacity: 0.2;
+  }*/
 }
 .contacto__input {
-  background-image: linear-gradient(#F9AE00, #70b62c);
+  border: 2px #0077bd solid;
+  color: #0077bd;
+  box-shadow: 5px 5px 10px 0 #F9AE00;
+}
+.contacto__input:hover {
+  background-color: #0077bd;
   color: white;
 }
 .contacto__boton {
@@ -277,8 +305,12 @@ footer {
 /*Mercado*/
 .mercado__pizarra {
   animation-name: prueba;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-iteration-count: inherit;
+}
+.mercado__pizarra:hover {
+  transition: all 1s ease;
+  transform: translateX(50px);
 }
 
 @keyframes prueba {
@@ -296,7 +328,7 @@ footer {
 }
 /*Blog*/
 .blog__card {
-  background-color: #0077bd;
+  background-image: linear-gradient(#F9AE00, #0077bd);
   color: white;
   box-shadow: 5px 5px 10px 0 #F9AE00;
   overflow: hidden;
@@ -307,12 +339,14 @@ footer {
 }
 
 .blog__boton {
-  background-color: #F9AE00;
+  background-color: #0077bd;
   color: white;
+  border: #F9AE00 3px solid;
+  transition: transform 500ms ease;
 }
 .blog__boton:hover {
-  background-color: #70b62c;
-  transition: transform 500ms ease;
+  background-color: #F9AE00;
+  color: #0077bd;
   transform: translate(0, 10px) scale(1.2, 1.2);
 }
 
@@ -332,9 +366,23 @@ footer {
 .contacto {
   border: 2px #0077bd solid;
   border-radius: 10px;
+  background-image: url(../imgs/rp_color_blanco_vertical.png);
+  background-blend-mode: opacity(0.2);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  /*&--layer	{
+  	background-color: $color-principal;
+  	opacity: 0.2;
+  }*/
 }
 .contacto__input {
-  background-image: linear-gradient(#F9AE00, #70b62c);
+  border: 2px #0077bd solid;
+  color: #0077bd;
+  box-shadow: 5px 5px 10px 0 #F9AE00;
+}
+.contacto__input:hover {
+  background-color: #0077bd;
   color: white;
 }
 .contacto__boton {
@@ -349,8 +397,12 @@ footer {
 /*Mercado*/
 .mercado__pizarra {
   animation-name: prueba;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-iteration-count: inherit;
+}
+.mercado__pizarra:hover {
+  transition: all 1s ease;
+  transform: translateX(50px);
 }
 
 @keyframes prueba {
@@ -368,7 +420,7 @@ footer {
 }
 @media (min-width: 600px) and (max-width: 976px) {
   .nav__hamburger {
-    border: white solid 6px;
+    border: white solid 4px;
     font-size: 25px;
   }
   .container__iframe {
@@ -377,12 +429,11 @@ footer {
   .main__tarjeta {
     max-width: 450px;
   }
-  .footer__contacto {
-    padding-left: 30px;
-  }
   .footer__secciones--a {
     font-size: 1rem;
-    padding-left: 120px;
+  }
+  .footer__base--text {
+    font-size: 0.85rem;
   }
 }
 @media only screen and (min-width: 977px) {
@@ -405,13 +456,14 @@ footer {
   }
   .footer__secciones--a {
     font-size: 1.2rem;
-    padding-left: 150px;
+    /* padding-left: 150px;*/
   }
-  .footer__contacto {
+  /*.footer__contacto {
     padding-left: 70px;
-  }
+  }*/
   .footer__secciones2 {
     font-size: 1rem;
+    line-height: 2.5rem;
   }
   .nav {
     background-color: #70b62c;
@@ -427,8 +479,7 @@ footer {
     background-color: #0077bd;
     color: white;
     font-weight: 600;
-    transform: scale(1, 1);
-    border-radius: 10px;
+    transform: scale(1.1, 1) translateY(10px);
   }
   .carousel__main {
     height: 90vh;
@@ -438,12 +489,12 @@ footer {
   .carousel__main {
     height: 120vh;
   }
-  .footer__contacto {
+  /*.footer__contacto {
     padding-left: 90px;
-  }
-  .footer__secciones--a {
+  }*/
+  /*.footer__secciones--a {
     padding-left: 130px;
-  }
+  }*/
 }
 @font-face {
   font-family: "veselinaregular";

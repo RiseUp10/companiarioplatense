@@ -1,104 +1,97 @@
-@media (min-width: 600px) and (max-width: 976px)	{
+@media (min-width: 600px) and (max-width: 976px) {
+  .nav__hamburger {
+    border: white solid 4px;
+    font-size: 25px;
+  }
 
-    .nav__hamburger	{
-                        border: white solid 6px;
-                        font-size: 25px;
-                    }
+  .container__iframe {
+    display: block;
+  }
 
-    .container__iframe  {
-                            display: block;
-                        }
-    
-    .main__tarjeta	{
-                        max-width: 450px;
-                     }
+  .main__tarjeta {
+    max-width: 450px;
+  }
 
-    .footer__contacto   {
-                            padding-left: 30px;
-                        }
+  .footer__secciones--a {
+    font-size: 1rem;
+  }
 
-    .footer__secciones--a   {
-                                font-size: 1rem;
-                                padding-left: 120px;
-                            }
+	.footer__base--text {
+    font-size: .85rem;
+	}
 }
 
+@media only screen and (min-width: 977px) {
+  .contenedor--60 {
+    max-width: 60%;
+    margin: 0 auto;
+  }
 
+  .nav__logo {
+    max-width: 350px;
+  }
 
-@media only screen and (min-width: 977px)	{			
+  .container__iframe {
+    display: block;
+  }
 
-    .contenedor--60 {
-                        max-width: 60%;
-                        margin: 0 auto;
-                    }
-    
-    .nav__logo  {
-                    max-width: 350px;
-                }
-    
-    .container__iframe  {
-                            display: block;
-                        }
+  .main__tarjeta {
+    max-width: 320px;
+  }
 
-    .main__tarjeta	{
-                        max-width: 320px;
-                        
-                    }
-    
-    .footer__base--text {
-                            font-size: 1rem;
-                            color: white;
-                        }
+  .footer__base--text {
+    font-size: 1rem;
+    color: white;
+  }
 
-    .footer__secciones--a   {
-                                font-size: 1.2rem;
-                                padding-left: 150px;
-                            }
-    
-    .footer__contacto   {   
-                            padding-left: 70px;
-                        }
-    
-    .footer__secciones2 {
-                              font-size: 1rem;
-                            }
-    
-    .nav	{
-				background-color: $color-terciario;
-	
-		&__anc	{
-						margin-right: px;
-						font-size: 1.5rem !important;
-                        color: $color-terciario;
-						-webkit-text-stroke-color: white;
-						-webkit-text-stroke-width: 1px;
-		
-			&:hover	{
-                        background-color: $color-secundario;
-                        color: white;
-                        font-weight: 600;
-                        transform: scale(1,1);
-                        border-radius: 10px;
-            
-                    }
-				}
-			}
-	
-	.carousel__main	{
-								height: 90vh;
-							}
-}
+  .footer__secciones--a {
+    font-size: 1.2rem;
+   /* padding-left: 150px;*/
+  }
 
-@media only screen and (min-width: 1250px)	{
-    .carousel__main	{
-                        height: 120vh;
-                    }
-    
-    .footer__contacto   {
-                            padding-left: 90px;
-                        }
+  /*.footer__contacto {
+    padding-left: 70px;
+  }*/
 
-    .footer__secciones--a   {
-                                padding-left: 130px;
+  .footer__secciones2 {
+    font-size: 1rem;
+		line-height: 2.5rem;
+  }
+
+  .nav {
+    background-color: $color-terciario;
+
+    &__anc {
+      margin-right: px;
+      font-size: 1.5rem !important;
+      color: $color-terciario;
+      -webkit-text-stroke-color: white;
+      -webkit-text-stroke-width: 1px;
+
+      &:hover {
+        background-color: $color-secundario;
+        color: white;
+        font-weight: 600;
+        transform: scale(1.1, 1) translateY(10px);
+      }
     }
+  }
+
+  .carousel__main {
+    height: 90vh;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .carousel__main {
+    height: 120vh;
+  }
+
+  /*.footer__contacto {
+    padding-left: 90px;
+  }*/
+
+  /*.footer__secciones--a {
+    padding-left: 130px;
+  }*/
 }
