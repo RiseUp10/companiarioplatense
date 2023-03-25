@@ -275,7 +275,6 @@ footer {
   border: 2px #0077bd solid;
   border-radius: 10px;
   background-image: url(../imgs/rp_color_blanco_vertical.png);
-  background-blend-mode: opacity(0.2);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -367,7 +366,6 @@ footer {
   border: 2px #0077bd solid;
   border-radius: 10px;
   background-image: url(../imgs/rp_color_blanco_vertical.png);
-  background-blend-mode: opacity(0.2);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
