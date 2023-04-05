@@ -1,7 +1,27 @@
-@media (min-width: 600px) and (max-width: 976px) {
+@media only screen and (min-width: 600px) {
   .nav__hamburger {
     border: white solid 4px;
     font-size: 25px;
+  }
+
+  .nav__logo {
+    max-width: 280px;
+  }
+
+  h2 h3  {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+  .main__carousel--text1 {
+    padding: 10px 0;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: $shadow;
   }
 
   .container__iframe {
@@ -11,7 +31,6 @@
   .main__tarjeta {
     max-width: 450px;
   }
-
   .footer__secciones--a {
     font-size: 1rem;
   }
@@ -30,6 +49,49 @@
   .nav__logo {
     max-width: 350px;
   }
+  .nav__anc {
+    margin: 0 15px;
+  }
+
+  .nav__item--active {
+    color: white;
+    font-weight: bold;
+    border: 0px;
+  }
+  
+  h1  {
+    font-size:3rem;
+  }
+
+  h2  {
+    font-size: 2.2rem;
+  }
+
+  h5  {
+    font-size: 2rem;
+  }
+
+
+
+  p   {
+    font-size: 1.5rem;
+  }
+
+  .main__carousel--text1 {
+    padding: 10px 0;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: $shadow;
+  }
+
+  .main__nosotros--highlighted  {
+    max-height: 180px;
+    margin-bottom: 280px;
+  }
+
+  .bi-check-circle  {
+    font-size: 50px;
+  }
 
   .container__iframe {
     display: block;
@@ -39,6 +101,10 @@
     max-width: 320px;
   }
 
+  .footer__logo {
+    max-width: 150px;
+  }
+
   .footer__base--text {
     font-size: 1rem;
     color: white;
@@ -46,16 +112,11 @@
 
   .footer__secciones--a {
     font-size: 1.2rem;
-   /* padding-left: 150px;*/
   }
-
-  /*.footer__contacto {
-    padding-left: 70px;
-  }*/
 
   .footer__secciones2 {
     font-size: 1rem;
-		line-height: 2.5rem;
+		line-height: 1.8rem;
   }
 
   .nav {
@@ -84,14 +145,6 @@
 
 @media only screen and (min-width: 1250px) {
   .carousel__main {
-    height: 120vh;
+    height: 100vh;
   }
-
-  /*.footer__contacto {
-    padding-left: 90px;
-  }*/
-
-  /*.footer__secciones--a {
-    padding-left: 130px;
-  }*/
 }

@@ -27,6 +27,11 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nav__a nav__anc" href="../pages/blog.html">Portal de noticias</a>
+                        </li><li class="nav-item">
+                            <a class="nav-link nav__a nav__anc" href="../pages/mercado.html">Mercado</a>
+                        </li>
+                            <li class="nav-item">
+                            <a class="nav-link nav__a nav__anc" href="../pages/nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item nav__item--active">
                             <a class="nav-link nav__a nav__anc" href="#">Contacto</a>
@@ -37,52 +42,69 @@
             </nav>
         </header>
         <main>
-          <div class="contacto--layer">
-            <div class="contacto--layer2">
-              <div class="container">
-                <h2 class="text-center pt-3">Comunicate con nosotros</h2>
-              </div>
-              <form class="contenedor--60 contacto onda p-3 my-3">
-                <div class="m-3">
-                  <input type="email" class="form-control contacto__input" placeholder="Correo electrónico" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="m-3">
-                  <input type="text" class="form-control contacto__input" placeholder="Nombre completo" id="exampleInputName1">
-                </div>
-                <div class="m-3">
-                  <input type="textarea" class="form-control contacto__input" placeholder="Mensaje" id="exampleInputName1">
-                </div>
-                <div class="text-center fw-bold mt-5">
-                  <button type="submit" class="btn contacto__boton">Enviar</button>
-                </div>
-              </form>
-              <div class="container mt-5 pb-5 z-2">
-                <div class="row align-items-center">
-                  <h2>Adónde estamos</h2>
-                  <iframe class="onda" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7169883309775!2d-58.43439198510482!3d-34.58602696406853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb58ec19584d9%3A0xf8fe18d9027847bb!2sEl%20Salvador%205218%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1677596990443!5m2!1ses!2sar" width="230" height="350" style="border: 5px #0077bd solid; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-              </div>
+            <div class="container">
+                <h3 class="text-center mt-4">Formulario de contacto</h3>
             </div>
-          </div>    
-        </main>
+            <form class="contenedor--60 contacto my-3">
+              <img src="../imgs/rp_color_blanco_vertical.png" alt="Logo de la empresa" class="contacto--layer ">  
+              <div class="contacto__form">
+                <div class="m-3">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control contacto__input" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text fst-italic">Esta información no será usado con fines comerciales.</div>
+                </div>
+                <div class="m-3">
+                    <label for="exampleInputName1" class="form-label">Nombre completo</label>
+                    <input type="text" class="form-control contacto__input" placeholder="Nombre completo" id="exampleInputName1">
+                </div>
+                <div class="m-3">
+                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control contacto__input" id="exampleInputPassword1">
+                </div>
+                <div class="m-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Estoy de acuerdo con las políticas de la empresa.</label>
+                </div>
+                <div class="text-center fw-bold">
+                    <button type="submit" class="btn contacto__boton">Enviar</button>
+                </div>
+              </div>
+            </form>
+                <div class="container mt-5 mb-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm-5 d-none d-sm-block px-5">
+                            <h3>Título</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore natus voluptas tempore qui ratione saepe, quis facilis, eum sit deserunt ipsum. Quasi eligendi quod nam cum voluptas consequuntur possimus nisi?</p>
+                        </div>
+                        <div class="col-sm-7 text-center mt-md-2">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7169883309775!2d-58.43439198510482!3d-34.58602696406853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb58ec19584d9%3A0xf8fe18d9027847bb!2sEl%20Salvador%205218%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1677596990443!5m2!1ses!2sar" width="330" height="260" style="border: 2px #0077bd solid; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>    
+            </main>
         <!--FOOTER-->
         <footer>
             <div class="contenedor">
               <div class="row">
-                <div class="col-sm-6 col-md-4 order-md-2 text-center">
-                  <a href="../index.html"
+                <div class="col-sm-6 col-md-4 my-3 order-md-2 text-center">
+                  <a href="#"
                     ><img
                       class="footer__logo"
                       src="../imgs/rp_color_negro_vertical.png"
                       alt="Logo de Compañía Rioplatense"
                   /></a>
                 </div>
-                <div class="col-sm-6 col-md-4 text-light my-1 order-md-1 text-center">
+                <div class="col-sm-6 col-md-4 text-light order-md-1 text-center">
                   <h5 class="text-center">Páginas</h5>
                   <ul class="footer__secciones">
                     <li>
-                      <a class="footer__secciones--a" href="../index.html"
-                        >Inicio</a
+                      <a class="footer__secciones--a" href="../pages/mercado.html"
+                        >Mercado</a
+                      >
+                    </li>
+                    <li>
+                      <a class="footer__secciones--a" href="../pages/nosotros.html"
+                        >Nosotros</a
                       >
                     </li>
                     <li>
@@ -91,13 +113,13 @@
                       >
                     </li>
                     <li>
-                      <a class="footer__secciones--a nav__item--active" href="../pages/contacto.html"
+                      <a class="footer__secciones--a" href="../pages/contacto.html"
                         >Contacto</a
                       >
                     </li>
                   </ul>
                 </div>
-                <div class="col-sm-6 col-md-4 my-1 text-light order-md-3 text-center">
+                <div class="col-sm-6 col-md-4 my-2 text-light order-md-3 text-center">
                   <h5 class="text-center">Contacto</h5>
       
                   <div>
@@ -157,7 +179,7 @@
             <div class="container-fluid">
               <div class="row footer__base">
                 <p class="footer__base--text">
-                  Compañía Rioplatense SRL | Made by Rise Up © 2023
+                  © Copyright 2023 | Compañía Rioplatense SRL | Creada por Martin Rey
                 </p>
               </div>
             </div>

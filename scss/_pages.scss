@@ -1,12 +1,14 @@
-/*Blog*/
+/*Portal de noticias*/
 .blog__card {
   background-image: $gradiante;
   color: white;
   box-shadow: $shadow;
   overflow: hidden;
-
+  border: $color-terciario 5px solid;
+  border-radius: 15px;
+  transition: transform 500ms ease;
+  
   &:hover {
-    transition: transform 500ms ease;
     transform: scale(1.05);
   }
 }
@@ -25,32 +27,23 @@
   }
 }
 
-/*Nosotros*/
-.nosotros__img {
-  max-width: 300px;
-  border-radius: 50%;
-  max-height: 150px;
-  transition: 500ms ease;
-
-  &:hover {
-    transform: translate(0, -20px);
-    opacity: 0.7;
+.blog--layer  {
+  width: 100%;
+  background-image: url(../imgs/campo_arado.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  &2  {
+    width: 100%;
+    background-image: linear-gradient(45deg, rgba(249, 174, 0, 0.6), white);
   }
 }
 
 /*Contacto*/
 .contacto {
-  border: 2px $color-secundario solid;
+  border: 5px $color-secundario solid;
   border-radius: 10px;
-	background-image: url(../imgs/rp_color_blanco_vertical.png);
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center;
-
-  /*&--layer	{
-		background-color: $color-principal;
-		opacity: 0.2;
-	}*/
 	
 	&__input {
     border: 2px $color-secundario solid;
@@ -58,7 +51,7 @@
 		box-shadow: $shadow;
   
 		&:hover	{
-			background-color: $color-secundario;
+			background-color: $color-principal;
 			color: white;
 		}
 	}
@@ -67,38 +60,22 @@
     @extend .boton;
     background-color: $color-secundario;
     color: white;
+    font-size: 1.5rem;
 
     &:hover {
       border: 2px $color-secundario solid;
+      background-color: $color-principal;
       color: $color-secundario;
     }
   }
 }
 
-/*Mercado*/
-.mercado__pizarra {
-  animation-name: prueba;
-  animation-duration: 2s;
-  animation-iteration-count: inherit;
-
-  &:hover {
-    transition: all 1s ease;
-    transform: translateX(50px);
-  }
+.contacto--layer  {
+  width: 100%;
+  background-image: url(../imgs/campo_trigo_avion_sol.jpg);
 }
 
-@keyframes prueba {
-  0% {
-    opacity: 0;
-    filter: blur(20px);
+.contacto--layer2 {
+    width: 100%;
+    background-image: linear-gradient(180deg, rgba(249, 174, 0, 0.1), white);
   }
-
-  50% {
-    opacity: 0.5;
-    /*filter: brightness(1),blur(20px);*/
-  }
-
-  100% {
-    opacity: 1;
-  }
-}

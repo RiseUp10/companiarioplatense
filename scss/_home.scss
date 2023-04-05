@@ -1,20 +1,36 @@
-.main__section1:before	{
-	transform: translateX(-30px);
-	transition: all 1s;
+.main__carousel {
+  position: relative;
 }
 
-.main__tarjeta {
+.main__carousel--text1 { //MQ
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  color: white;
+}
+
+.main__nosotros--mVV { 
   color: white;
   background-image: $gradiante;
   border: 2px solid $color-secundario;
   border-radius: 10px;
   box-shadow: $shadow;
-  max-width: 450px;
+  max-width: 350px;
 	transition: all 500ms;
 
 	&:hover {
-    transform: translate(0, 10px) scale(1.2, 1.2);
+    transform: translate(0, -30px) /*scale(1.2, 1.2)*/;
   }
+}
+
+.main__nosotros--highlighted  {
+  color: white;
+  background-color: $color-principal;
+  min-height: 300px;
+}
+
+.bi-check-circle  {
+  font-size: 30px;
 }
 
 .container__iframe {
@@ -39,17 +55,10 @@
   height: 100%;
   border: $color-secundario 5px solid;
   border-radius: 10px;
+  box-shadow: $shadow;
 }
 
-.main__blog {
-  background-color: $color-secundario;
-	background-image: url(../imgs/rp_color_negro_iso.png);
-	background-repeat: repeat-x;
-	background-position: center;
-	background-size:contain;
-
-
-  &--boton {
+.main__blog--boton {
     @extend .boton;
     background-color: black;
     color: $color-principal;
@@ -61,8 +70,12 @@
       color: black;
     }
   }
-}
 
+  .accordion-flush .accordion-item .accordion-button.collapsed {
+    border-radius: 10px;
+    padding: 30px 40px;
+  }
+  
 .main__acordeon {
   color: white;
   font-family: "poppins", sans-serif;
@@ -74,5 +87,6 @@
 
   &--open {
     background-color: $color-principal;
+    border-radius:10px;
   }
 }
